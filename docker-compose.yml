@@ -3,5 +3,10 @@ version: '3' # Version of compose file format.
 services:
     server: # This can be named anyway. Used for connecting containers.
         build: ./server # Folder containing Dockerfile.
-        ports: # List of ports.
-        - 8080:5001 # Host:Container port forwarding.
+        # ports: # List of ports.
+            #- 8080:5001 # Host:Container port forwarding.
+
+    view:
+        build: ./view
+        ports:
+            - 8080:80
