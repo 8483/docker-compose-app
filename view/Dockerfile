@@ -1,6 +1,4 @@
 FROM nginx
 
 # Overwrite default index with our own.
-COPY ./index.html /usr/share/nginx/html
-
-EXPOSE 8081:80
+COPY ./src /usr/share/nginx/html
